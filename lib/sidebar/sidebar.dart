@@ -16,7 +16,7 @@ import '../bloc_navigation_bloc/navigation_bloc.dart';
 import '../sidebar/menu_item.dart';
 
 
-String schoolName = "AAB Secondary School";
+String schoolName = "Sidney Stringer Academy";
 String subtitle = "Graduating Class (Elite Set 2021)";
 
 String yearClass11ATitle = "Year 11A Class Graduates";
@@ -32,7 +32,7 @@ String exitAppSubtitle = "Do you really really want to?";
 String exitAppNo = "Oh No";
 String exitAppYes = "I Have To";
 
-String imgAsset = "assets/images/hallel_9.jpg";
+String imgAsset = "assets/images/thrown_11_1.jpg";
 
 Color gradientColor = Colors.indigo;
 Color gradientColorTwo = Colors.cyan;

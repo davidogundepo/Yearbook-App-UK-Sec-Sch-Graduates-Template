@@ -22,16 +22,17 @@ String mailSECOND = "?subject=Hello ";
 String urlTwitter = "https://twitter.com/";
 String urlFacebook = "https://facebook.com/";
 String urlInstagram = "https://www.instagram.com/";
-String urlSnapchat = "https://www.snapchat.com/";
-String urlTikTok = "https://www.tiktok.com/";
+String urlSnapchat = "https://www.snapchat.com/add/";
+String urlTikTok = "https://www.tiktok.com/@";
 
-String schoolName = "AAB Secondary School";
+String schoolName = "Sidney Stringer Academy";
 
 String reachDetails = "Contacts";
 String autoBioDetails = "AutoBiography";
 
 String callButton = "Call";
 String messageButton = "Send a Message";
+String whatsAppButton = "Send a WhatsApp Message";
 String emailButton = "Send an Email";
 String twitterButton = "My Twitter";
 String instagramButton = "My Instagram";
@@ -150,7 +151,8 @@ class _Year11ClassCDetailsPage extends State<Year11ClassCDetailsPage> {
     if (await canLaunch(url)) {
       await launch(url);
     } else {
-      print("Can't Launch $url");
+      ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: new Text("The required App not installed")));
     }
   }
 
@@ -383,6 +385,7 @@ class _Year11ClassCDetailsPage extends State<Year11ClassCDetailsPage> {
     _snapchat = year11ClassCNotifier.currentYear11ClassC.snapchat;
     _tikTok = year11ClassCNotifier.currentYear11ClassC.tikTok;
     _favSubject = year11ClassCNotifier.currentYear11ClassC.favSubject;
+    _favSchoolActivity = year11ClassCNotifier.currentYear11ClassC.favSchoolActivity;
     _favClassmate = year11ClassCNotifier.currentYear11ClassC.favClassmate;
     _favPlaceInCampus = year11ClassCNotifier.currentYear11ClassC.favPlaceInCampus;
     _favSportInCampus = year11ClassCNotifier.currentYear11ClassC.favSportInCampus;
@@ -655,7 +658,7 @@ class _Year11ClassCDetailsPage extends State<Year11ClassCDetailsPage> {
                       ),
                       elevation: 2,
                       color: buttonColor,
-                      icon: new Icon(MdiIcons.twitterCircle, color: iconTextColor),
+                      icon: new Icon(MdiIcons.twitter, color: iconTextColor),
                       label: Text(twitterButton,
                           style: GoogleFonts.abel(
                               color: iconTextColor,
@@ -688,7 +691,7 @@ class _Year11ClassCDetailsPage extends State<Year11ClassCDetailsPage> {
                         ),
                         elevation: 2,
                         color: buttonColor,
-                        icon: new Icon(MdiIcons.twitterCircle, color: iconTextColor),
+                        icon: new Icon(MdiIcons.twitter, color: iconTextColor),
                         label: Text(twitterButton,
                             style: GoogleFonts.abel(
                                 color: iconTextColor,
@@ -781,16 +784,16 @@ class _Year11ClassCDetailsPage extends State<Year11ClassCDetailsPage> {
                       color: buttonColor,
                       icon: new Icon(
                         MdiIcons.snapchat,
-                        color: iconTextColorTwo,
+                        color: iconTextColor,
                       ),
                       label: Text(snapchatButton,
                           style: GoogleFonts.abel(
-                              color: iconTextColorTwo,
+                              color: iconTextColor,
                               fontSize: 18,
                               fontWeight: FontWeight.w300)),
                       onPressed: () {
                         if (_snapchat.toString().startsWith('@')) {
-                          var most = _instagram.toString().substring(1);
+                          var most = _snapchat.toString().substring(1);
                           launchURL(urlSnapchat + most);
                         }
                         else {
@@ -844,11 +847,11 @@ class _Year11ClassCDetailsPage extends State<Year11ClassCDetailsPage> {
                       color: buttonColor,
                       icon: new FaIcon(
                         FontAwesomeIcons.tiktok,
-                        color: iconTextColorTwo,
+                        color: iconTextColor,
                       ),
                       label: Text(tikTokButton,
                           style: GoogleFonts.abel(
-                              color: iconTextColorTwo,
+                              color: iconTextColor,
                               fontSize: 18,
                               fontWeight: FontWeight.w300)),
                       onPressed: () {

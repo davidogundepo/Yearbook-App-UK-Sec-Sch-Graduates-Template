@@ -11,11 +11,17 @@ import '../notifier/year_11_class_a_notifier.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
-String schoolName = "AAB Secondary School";
+String schoolName = "Sidney Stringer Academy";
 
 String callFIRST = "tel:+44";
 String smsFIRST = "sms:+44";
 String whatsAppFIRST = "https://api.whatsapp.com/send?phone=+44";
+// String whatsAppFIRSTd = "https://wa.me/send?phone=+44";
+// String whatsAppFIRSTf = "whatsapp://send?phone=+44";
+// String whatsAppFIRSTAndroid = "whatsapp://send?phone=+44";
+// String whatsAppFIRSTIOS = "https://wa.me";
+
+
 String whatsAppSECOND = "&text=Hello%20";
 String whatsAppTHIRD = ",%20How%20are%20you%20doing%20today?";
 String mailFIRST = "mailto:";
@@ -23,8 +29,8 @@ String mailSECOND = "?subject=Hello ";
 String urlTwitter = "https://twitter.com/";
 String urlFacebook = "https://facebook.com/";
 String urlInstagram = "https://www.instagram.com/";
-String urlSnapchat = "https://www.snapchat.com/";
-String urlTikTok = "https://www.tiktok.com/";
+String urlSnapchat = "https://www.snapchat.com/add/";
+String urlTikTok = "https://www.tiktok.com/@";
 
 String reachDetails = "Contacts";
 String autoBioDetails = "AutoBiography";
@@ -66,24 +72,24 @@ String facebookProfileSharedPreferencesButton = "Go to Facebook";
 String facebookProfileSharedPreferencesButtonTwo = "Lol, No";
 
 
-Color backgroundColor = Color.fromRGBO(222, 93, 131, 1);
+Color backgroundColor = Color.fromRGBO(0, 91, 91, 1.0);
 Color appBarTextColor = Colors.white;
-Color appBarBackgroundColor = Colors.pink[300];
+Color appBarBackgroundColor = Colors.teal[400];
 Color appBarIconColor = Colors.white;
 Color materialBackgroundColor = Colors.transparent;
-Color shapeDecorationColor = Colors.pink[500];
+Color shapeDecorationColor = Colors.teal[700];
 Color shapeDecorationColorTwo = Colors.white;
-Color shapeDecorationColorThree = Colors.pink[300];
-Color shapeDecorationTextColor = Colors.pink[300];
-Color shapeDecorationIconColor = Colors.pink[300];
+Color shapeDecorationColorThree = Colors.teal[400];
+Color shapeDecorationTextColor = Colors.teal[400];
+Color shapeDecorationIconColor = Colors.teal[400];
 Color cardBackgroundColor = Colors.white;
-Color splashColor = Colors.pink[500];
+Color splashColor = Colors.teal[700];
 Color splashColorTwo = Colors.white;
-Color splashColorThree = Colors.pink[300];
+Color splashColorThree = Colors.teal[400];
 Color iconTextColor = Colors.white;
-Color iconTextColorTwo = Colors.pink[300];
-Color buttonColor = Colors.pink[300];
-Color textColor = Colors.pink[300];
+Color iconTextColorTwo = Colors.teal[400];
+Color buttonColor = Colors.teal[400];
+Color textColor = Colors.teal[400];
 Color confettiColorOne = Colors.green;
 Color confettiColorTwo = Colors.blue;
 Color confettiColorThree = Colors.pink;
@@ -150,11 +156,12 @@ class _SubPageState extends State<SubPage> {
     });
   }
 
-  Future launchURL(String url) async {
+  launchURL(String url) async {
     if (await canLaunch(url)) {
       await launch(url);
     } else {
-      print("Can't Launch $url");
+      ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: new Text("The required App not installed")));
     }
   }
 
@@ -652,7 +659,7 @@ class _SubPageState extends State<SubPage> {
                       ),
                       elevation: 2,
                       color: buttonColor,
-                      icon: new Icon(MdiIcons.twitterCircle, color: iconTextColor),
+                      icon: new Icon(MdiIcons.twitter, color: iconTextColor),
                       label: Text(twitterButton,
                           style: GoogleFonts.abel(
                               color: iconTextColor,
@@ -685,7 +692,7 @@ class _SubPageState extends State<SubPage> {
                         ),
                         elevation: 2,
                         color: buttonColor,
-                        icon: new Icon(MdiIcons.twitterCircle, color: iconTextColor),
+                        icon: new Icon(MdiIcons.twitter, color: iconTextColor),
                         label: Text(twitterButton,
                             style: GoogleFonts.abel(
                                 color: iconTextColor,
@@ -778,16 +785,16 @@ class _SubPageState extends State<SubPage> {
                       color: buttonColor,
                       icon: new Icon(
                         MdiIcons.snapchat,
-                        color: iconTextColorTwo,
+                        color: iconTextColor,
                       ),
                       label: Text(snapchatButton,
                           style: GoogleFonts.abel(
-                              color: iconTextColorTwo,
+                              color: iconTextColor,
                               fontSize: 18,
                               fontWeight: FontWeight.w300)),
                       onPressed: () {
                         if (_snapchat.toString().startsWith('@')) {
-                          var most = _instagram.toString().substring(1);
+                          var most = _snapchat.toString().substring(1);
                           launchURL(urlSnapchat + most);
                         }
                         else {
@@ -841,11 +848,11 @@ class _SubPageState extends State<SubPage> {
                       color: buttonColor,
                       icon: new FaIcon(
                         FontAwesomeIcons.tiktok,
-                        color: iconTextColorTwo,
+                        color: iconTextColor,
                       ),
                       label: Text(tikTokButton,
                           style: GoogleFonts.abel(
-                              color: iconTextColorTwo,
+                              color: iconTextColor,
                               fontSize: 18,
                               fontWeight: FontWeight.w300)),
                       onPressed: () {
