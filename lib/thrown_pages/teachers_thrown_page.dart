@@ -17,7 +17,7 @@ import '../details_pages/graduates_class_teachers_details.page.dart';
 import '../notifier/graduates_class_teachers_notifier.dart';
 
 
-String schoolName = "Sidney Stringer Academy";
+String schoolName = "AAB Academy";
 String thrownName = "Class Teachers";
 
 String exitAppStatement = "Exit from App";

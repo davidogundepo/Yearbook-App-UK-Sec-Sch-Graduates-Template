@@ -19,7 +19,7 @@ import '../bloc_navigation_bloc/navigation_bloc.dart';
 import '../details_pages/year_11a_details_page.dart';
 
 
-String schoolName = "Sidney Stringer Academy";
+String schoolName = "AAB Academy";
 String postcode = "CV1 5GE";
 String city = "Coventry";
 String stateName = "West Midlands";

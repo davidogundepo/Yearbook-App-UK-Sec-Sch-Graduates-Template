@@ -18,7 +18,7 @@ import '../notifier/class_prefects_notifier.dart';
 
 
 
-String schoolName = "Sidney Stringer Academy";
+String schoolName = "AAB Academy";
 String thrownName = "School Prefects";
 
 String exitAppStatement = "Exit from App";

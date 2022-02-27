@@ -16,7 +16,7 @@ import '../bloc_navigation_bloc/navigation_bloc.dart';
 import '../details_pages/year_11c_details_page.dart';
 import '../notifier/year_11_class_c_notifier.dart';
 
-String schoolName = "Sidney Stringer Academy";
+String schoolName = "AAB Academy";
 String thrownName = "Year 11C Class Graduates";
 
 String exitAppStatement = "Exit from App";

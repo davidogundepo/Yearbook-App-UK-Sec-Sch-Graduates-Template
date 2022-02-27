@@ -11,7 +11,7 @@ import '../notifier/year_11_class_b_notifier.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
-String schoolName = "Sidney Stringer Academy";
+String schoolName = "AAB Academy";
 
 
 String callFIRST = "tel:+44";

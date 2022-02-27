@@ -17,7 +17,7 @@ import '../details_pages/management_details_page.dart';
 import '../notifier/management_body_notifier.dart';
 
 
-String schoolName = "Sidney Stringer Academy";
+String schoolName = "AAB Academy";
 String thrownName = "Management";
 
 String exitAppStatement = "Exit from App";

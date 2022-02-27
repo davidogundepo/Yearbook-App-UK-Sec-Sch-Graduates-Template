@@ -25,7 +25,7 @@ String urlInstagram = "https://www.instagram.com/";
 String urlSnapchat = "https://www.snapchat.com/add/";
 String urlTikTok = "https://www.tiktok.com/@";
 
-String schoolName = "Sidney Stringer Academy";
+String schoolName = "AAB Academy";
 
 String reachDetails = "Contacts";
 String autoBioDetails = "AutoBiography";

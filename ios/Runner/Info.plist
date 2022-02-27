@@ -40,11 +40,6 @@
 			<string>UIInterfaceOrientationLandscapeRight</string>
 		</array>
 		<key>UIViewControllerBasedStatusBarAppearance</key>
-		<key>NSAppTransportSecurity</key>
-		<dict>
-			<key>NSLocationWhenInUseUsageDescription</key>
-			<true/>
-		</dict>
 		<false/>
 		<key>UIStatusBarHidden</key>
 		<false/>

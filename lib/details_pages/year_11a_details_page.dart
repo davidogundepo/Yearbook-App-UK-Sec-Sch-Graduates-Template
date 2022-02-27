@@ -11,7 +11,7 @@ import '../notifier/year_11_class_a_notifier.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
-String schoolName = "Sidney Stringer Academy";
+String schoolName = "AAB Academy";
 
 String callFIRST = "tel:+44";
 String smsFIRST = "sms:+44";
@@ -576,8 +576,8 @@ class _SubPageState extends State<SubPage> {
                           MdiIcons.message,
                           color: iconTextColor,
                         ),
-                        label: Text(messageButton,
-                            style: GoogleFonts.abel(
+                        label: Text(whatsAppButton,
+                                 style: GoogleFonts.abel(
                                 color: iconTextColor,
                                 fontSize: 18,
                                 fontWeight: FontWeight.w300)),

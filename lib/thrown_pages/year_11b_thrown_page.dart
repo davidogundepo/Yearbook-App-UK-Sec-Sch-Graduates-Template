@@ -17,7 +17,7 @@ import 'package:provider/provider.dart';
 import '../details_pages/year_11b_details_page.dart';
 
 
-String schoolName = "Sidney Stringer Academy";
+String schoolName = "AAB Academy";
 String thrownName = "Year 11B Class Graduates";
 
 String exitAppStatement = "Exit from App";

@@ -13,7 +13,7 @@ import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:pie_chart/pie_chart.dart';
 
 
-String schoolName = "Sidney Stringer Academy";
+String schoolName = "AAB Academy";
 String aboutSchool = "About $schoolName";
 
 String visionSwipe = "Swipe left on 'OUR VISION STATEMENT'  >>>";

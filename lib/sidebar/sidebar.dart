@@ -16,7 +16,7 @@ import '../bloc_navigation_bloc/navigation_bloc.dart';
 import '../sidebar/menu_item.dart';
 
 
-String schoolName = "Sidney Stringer Academy";
+String schoolName = "AAB Academy";
 String subtitle = "Graduating Class (Elite Set 2021)";
 
 String yearClass11ATitle = "Year 11A Class Graduates";
