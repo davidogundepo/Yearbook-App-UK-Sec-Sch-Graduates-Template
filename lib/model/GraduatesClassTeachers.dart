@@ -32,7 +32,7 @@ class GraduatesClassTeachers {
     regionOfOrigin = data['region_of_origin'];
     hobbies = data['hobbies'];
     philosophy = data['philosophy'];
-    linkedIn = data['linkedIn'];
+    linkedIn = data['linkedin'];
   }
 
 }

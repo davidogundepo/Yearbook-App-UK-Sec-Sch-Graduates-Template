@@ -11,7 +11,7 @@ import '../notifier/year_11_class_b_notifier.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
-String schoolName = "Sidney Stringer Academy";
+String schoolName = "AAB Secondary School";
 
 
 String callFIRST = "tel:+44";
@@ -23,11 +23,9 @@ String mailFIRST = "mailto:";
 String mailSECOND = "?subject=Hello ";
 String urlTwitter = "https://twitter.com/";
 String urlFacebook = "https://facebook.com/";
-String urlFacebookk = "https://fb.me/";
-String urlFacebookMessenger = "https://m.me/";
 String urlInstagram = "https://www.instagram.com/";
-String urlSnapchat = "https://www.snapchat.com/add/";
-String urlTikTok = "https://www.tiktok.com/@";
+String urlSnapchat = "https://www.snapchat.com/";
+String urlTikTok = "https://www.tiktok.com/";
 
 String reachDetails = "Contacts";
 String autoBioDetails = "AutoBiography";
@@ -156,8 +154,7 @@ class _Year11ClassBDetailsPage extends State<Year11ClassBDetailsPage> {
     if (await canLaunch(url)) {
       await launch(url);
     } else {
-      ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: new Text("The required App not installed")));
+      print("Can't Launch $url");
     }
   }
 
@@ -662,7 +659,7 @@ class _Year11ClassBDetailsPage extends State<Year11ClassBDetailsPage> {
                       ),
                       elevation: 2,
                       color: buttonColor,
-                      icon: new Icon(MdiIcons.twitter, color: iconTextColor),
+                      icon: new Icon(MdiIcons.twitterCircle, color: iconTextColor),
                       label: Text(twitterButton,
                           style: GoogleFonts.abel(
                               color: iconTextColor,
@@ -695,7 +692,7 @@ class _Year11ClassBDetailsPage extends State<Year11ClassBDetailsPage> {
                         ),
                         elevation: 2,
                         color: buttonColor,
-                        icon: new Icon(MdiIcons.twitter, color: iconTextColor),
+                        icon: new Icon(MdiIcons.twitterCircle, color: iconTextColor),
                         label: Text(twitterButton,
                             style: GoogleFonts.abel(
                                 color: iconTextColor,
@@ -788,16 +785,16 @@ class _Year11ClassBDetailsPage extends State<Year11ClassBDetailsPage> {
                       color: buttonColor,
                       icon: new Icon(
                         MdiIcons.snapchat,
-                        color: iconTextColor,
+                        color: iconTextColorTwo,
                       ),
                       label: Text(snapchatButton,
                           style: GoogleFonts.abel(
-                              color: iconTextColor,
+                              color: iconTextColorTwo,
                               fontSize: 18,
                               fontWeight: FontWeight.w300)),
                       onPressed: () {
                         if (_snapchat.toString().startsWith('@')) {
-                          var most = _snapchat.toString().substring(1);
+                          var most = _instagram.toString().substring(1);
                           launchURL(urlSnapchat + most);
                         }
                         else {
@@ -851,11 +848,11 @@ class _Year11ClassBDetailsPage extends State<Year11ClassBDetailsPage> {
                       color: buttonColor,
                       icon: new FaIcon(
                         FontAwesomeIcons.tiktok,
-                        color: iconTextColor,
+                        color: iconTextColorTwo,
                       ),
                       label: Text(tikTokButton,
                           style: GoogleFonts.abel(
-                              color: iconTextColor,
+                              color: iconTextColorTwo,
                               fontSize: 18,
                               fontWeight: FontWeight.w300)),
                       onPressed: () {

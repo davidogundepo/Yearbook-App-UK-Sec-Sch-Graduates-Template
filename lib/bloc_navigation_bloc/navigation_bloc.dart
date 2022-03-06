@@ -20,7 +20,8 @@ abstract class NavigationStates {}
 
 class NavigationBloc extends Bloc<NavigationEvents, NavigationStates> {
 
-  NavigationBloc() : super(MyYear11ClassAPage());
+  @override
+  NavigationStates get initialState => MyYear11ClassAPage();
 
   @override
   Stream<NavigationStates> mapEventToState(NavigationEvents events) async* {

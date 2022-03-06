@@ -17,7 +17,7 @@ import 'package:provider/provider.dart';
 import '../details_pages/year_11b_details_page.dart';
 
 
-String schoolName = "Sidney Stringer Academy";
+String schoolName = "AAB Secondary School";
 String thrownName = "Year 11B Class Graduates";
 
 String exitAppStatement = "Exit from App";
@@ -31,7 +31,7 @@ String aboutSchool = "About $schoolName";
 String acronymMeanings = "Acronym Meanings";
 String aboutApp = "About App";
 
-String imgAsset = "assets/images/thrown_11_3.jpg";
+String imgAsset = "assets/images/hallel_12.jpg";
 
 Color backgroundColor = Color.fromRGBO(194, 178, 128, 1);
 Color appBarTextColor = Colors.white;
@@ -316,7 +316,6 @@ class _MyYear11ClassBPage extends State<MyYear11ClassBPage> {
                                                 color: textColor
                                             ),),
                                           onTap: () {
-                                            Navigator.of(context).pop(false);
                                             navigateToWhoWeArePage(context);
                                           }
                                       ),
@@ -327,7 +326,6 @@ class _MyYear11ClassBPage extends State<MyYear11ClassBPage> {
                                           color: textColor
                                         ),),
                                         onTap: () {
-                                          Navigator.of(context).pop(false);
                                           navigateToAboutSchoolDetailsPage(context);
                                         },
                                       ),
@@ -338,7 +336,6 @@ class _MyYear11ClassBPage extends State<MyYear11ClassBPage> {
                                                 color: textColor
                                             ),),
                                           onTap: () {
-                                            Navigator.of(context).pop(false);
                                             navigateToAcronymsMeaningsPage(context);
                                           }
                                       ),
@@ -349,7 +346,6 @@ class _MyYear11ClassBPage extends State<MyYear11ClassBPage> {
                                               color: textColor,
                                           ),),
                                         onTap: () {
-                                          Navigator.of(context).pop(false);
                                           navigateToAboutAppDetailsPage(context);
                                         },
                                       ),
@@ -383,7 +379,7 @@ class _MyYear11ClassBPage extends State<MyYear11ClassBPage> {
                       title: Center(
                         heightFactor: 0.6,
                         child: Text(thrownName,
-                            style: GoogleFonts.abel(
+                            style: GoogleFonts.amaticSC(
                               color: textColor,
                               fontSize: 26.0,
                               fontWeight: FontWeight.bold

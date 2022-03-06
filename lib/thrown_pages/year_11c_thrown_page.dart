@@ -16,7 +16,7 @@ import '../bloc_navigation_bloc/navigation_bloc.dart';
 import '../details_pages/year_11c_details_page.dart';
 import '../notifier/year_11_class_c_notifier.dart';
 
-String schoolName = "Sidney Stringer Academy";
+String schoolName = "AAB Secondary School";
 String thrownName = "Year 11C Class Graduates";
 
 String exitAppStatement = "Exit from App";
@@ -30,7 +30,7 @@ String aboutSchool = "About $schoolName";
 String acronymMeanings = "Acronym Meanings";
 String aboutApp = "About App";
 
-String imgAsset = "assets/images/thrown_11_4.jpg";
+String imgAsset = "assets/images/hallel_13.jpg";
 
 
 Color backgroundColor = Color.fromRGBO(86, 158, 128, 1);
@@ -313,7 +313,6 @@ class _MyYear11ClassCPage extends State<MyYear11ClassCPage> {
                                             color: textColor
                                           ),),
                                           onTap: () {
-                                            Navigator.of(context).pop(false);
                                           navigateToWhoWeArePage(context);
                                           }
                                       ),
@@ -324,7 +323,6 @@ class _MyYear11ClassCPage extends State<MyYear11ClassCPage> {
                                               color: textColor
                                           ),),
                                         onTap: () {
-                                          Navigator.of(context).pop(false);
                                           navigateToAboutSchoolDetailsPage(context);
                                         },
                                       ),
@@ -335,7 +333,6 @@ class _MyYear11ClassCPage extends State<MyYear11ClassCPage> {
                                                 color: textColor
                                             ),),
                                           onTap: () {
-                                            Navigator.of(context).pop(false);
                                             navigateToAcronymsMeaningsPage(context);
                                           }
                                       ),
@@ -346,7 +343,6 @@ class _MyYear11ClassCPage extends State<MyYear11ClassCPage> {
                                               color: textColor
                                           ),),
                                         onTap: () {
-                                          Navigator.of(context).pop(false);
                                           navigateToAboutAppDetailsPage(context);
                                         },
                                       ),
@@ -380,7 +376,7 @@ class _MyYear11ClassCPage extends State<MyYear11ClassCPage> {
                       title: Center(
                         heightFactor: 0.6,
                         child: Text(thrownName,
-                            style: GoogleFonts.abel(
+                            style: GoogleFonts.amaticSC(
                               color: appBarTextColor,
                               fontSize: 26.0,
                               fontWeight: FontWeight.bold

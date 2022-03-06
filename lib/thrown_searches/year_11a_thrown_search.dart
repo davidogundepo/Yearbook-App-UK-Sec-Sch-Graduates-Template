@@ -9,19 +9,19 @@ import 'package:provider/provider.dart';
 import '../details_pages/year_11a_details_page.dart';
 import '../notifier/year_11_class_a_notifier.dart';
 
-Color backgroundColor = Color.fromRGBO(0, 91, 91, 1.0);
+Color backgroundColor = Color.fromRGBO(222, 93, 131, 1);
 Color appBarTextColor = Colors.white;
-Color appBarBackgroundColor = Colors.teal[400];
+Color appBarBackgroundColor = Colors.pink[300];
 Color appBarIconColor = Colors.white;
 Color modalColor = Colors.transparent;
-Color modalBackgroundColor = Colors.teal[400];
+Color modalBackgroundColor = Colors.pink[300];
 Color materialBackgroundColor = Colors.transparent;
 Color cardBackgroundColor = Colors.white;
-Color splashColor = Colors.teal[700];
+Color splashColor = Colors.pinkAccent;
 Color iconColor = Colors.white;
 Color textColor = Colors.white;
 Color textColorTwo = Colors.white70;
-Color dialogBackgroundColor = Color.fromRGBO(0, 91, 91, 1.0);
+Color dialogBackgroundColor = Color.fromRGBO(222, 93, 131, 1);
 Color borderColor = Colors.black;
 Color textHighlightColor = Colors.white;
 
@@ -42,7 +42,7 @@ class MyYear11ClassASearch extends SearchDelegate {
         primaryColor: appBarBackgroundColor,
         primaryIconTheme: IconThemeData(color: appBarIconColor),
         primaryColorBrightness: Brightness.light,
-        textTheme: TextTheme(subtitle1: TextStyle(color: appBarTextColor, fontSize: 25)),
+        textTheme: TextTheme(title: TextStyle(color: appBarTextColor, fontSize: 25)),
         inputDecorationTheme: InputDecorationTheme(
           hintStyle: TextStyle(color: appBarTextColor.withAlpha(60)),
         ),

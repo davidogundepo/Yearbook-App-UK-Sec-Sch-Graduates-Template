@@ -12,7 +12,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 
-String schoolName = "Sidney Stringer Academy";
+String schoolName = "AAB Secondary School";
 
 
 String callFIRST = "tel:+44";
@@ -135,8 +135,7 @@ class _GraduatesClassTeachersDetailsPage extends State<GraduatesClassTeachersDet
     if(await canLaunch(url)) {
       await launch(url);
     } else{
-      ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: new Text("The required App not installed")));
+      print("Can't Launch $url");
     }
   }
 
@@ -608,7 +607,7 @@ class _GraduatesClassTeachersDetailsPage extends State<GraduatesClassTeachersDet
                       ),
                       elevation: 2,
                       color: buttonColor,
-                      icon: new Icon(MdiIcons.twitter, color: iconTextColor),
+                      icon: new Icon(MdiIcons.twitterCircle, color: iconTextColor),
                       label: Text(twitterButton,
                           style: GoogleFonts.abel(
                               color: iconTextColor,
@@ -641,7 +640,7 @@ class _GraduatesClassTeachersDetailsPage extends State<GraduatesClassTeachersDet
                         ),
                         elevation: 2,
                         color: buttonColor,
-                        icon: new Icon(MdiIcons.twitter, color: iconTextColor),
+                        icon: new Icon(MdiIcons.twitterCircle, color: iconTextColor),
                         label: Text(twitterButton,
                             style: GoogleFonts.abel(
                                 color: iconTextColor,
@@ -734,7 +733,7 @@ class _GraduatesClassTeachersDetailsPage extends State<GraduatesClassTeachersDet
                       ),
                       elevation: 2,
                       color: buttonColor,
-                      icon: new Icon(MdiIcons.linkedin, color: iconTextColor),
+                      icon: new Icon(MdiIcons.linkedinBox, color: iconTextColor),
                       label: Text(linkedInButton,
                           style: GoogleFonts.abel(
                               color: iconTextColor,
@@ -761,7 +760,7 @@ class _GraduatesClassTeachersDetailsPage extends State<GraduatesClassTeachersDet
                         ),
                         elevation: 2,
                         color: buttonColor,
-                        icon: new Icon(MdiIcons.linkedin, color: iconTextColor),
+                        icon: new Icon(MdiIcons.linkedinBox, color: iconTextColor),
                         label: Text(linkedInButton,
                             style: GoogleFonts.abel(
                                 color: iconTextColor,
@@ -927,43 +926,40 @@ class _GraduatesClassTeachersDetailsPage extends State<GraduatesClassTeachersDet
 
           (() {
             if (_courseTeaching.toString().isNotEmpty) {
-              return Padding(
-                padding: const EdgeInsets.only(top: 20.0),
-                child: Container(
-                  child: Material(
-                    color: materialBackgroundColor,
-                    child: InkWell(
-                      splashColor: splashColorThree,
-                      onTap: () {},
-                      child: Padding(
-                        padding: const EdgeInsets.only(bottom: 15, top: 15, left: 25),
-                        child: Text.rich(
-                          TextSpan(
-                            children: <TextSpan>[
-                              TextSpan(
-                                  text: courseTeachingTitle,
-                                  style: GoogleFonts.aBeeZee(
-                                    color: textColor,
-                                    fontSize: 19,
-                                    fontWeight: FontWeight.bold,
-                                  )),
-                              TextSpan(
-                                  text: ' ' + _courseTeaching,
-                                  style: GoogleFonts.trykker(
-                                    color: textColor,
-                                    fontSize: 19,
-                                    fontWeight: FontWeight.w300,
-                                  )),
-                            ],
-                          ),
+              return Container(
+                child: Material(
+                  color: materialBackgroundColor,
+                  child: InkWell(
+                    splashColor: splashColorThree,
+                    onTap: () {},
+                    child: Padding(
+                      padding: const EdgeInsets.only(bottom: 15, top: 15, left: 25),
+                      child: Text.rich(
+                        TextSpan(
+                          children: <TextSpan>[
+                            TextSpan(
+                                text: courseTeachingTitle,
+                                style: GoogleFonts.aBeeZee(
+                                  color: textColor,
+                                  fontSize: 19,
+                                  fontWeight: FontWeight.bold,
+                                )),
+                            TextSpan(
+                                text: ' ' + _courseTeaching,
+                                style: GoogleFonts.trykker(
+                                  color: textColor,
+                                  fontSize: 19,
+                                  fontWeight: FontWeight.w300,
+                                )),
+                          ],
                         ),
                       ),
                     ),
                   ),
-                  decoration: BoxDecoration(
-                      color: shapeDecorationColorTwo.withAlpha(50),
-                      borderRadius: new BorderRadius.circular(10)),
                 ),
+                decoration: BoxDecoration(
+                    color: shapeDecorationColorTwo.withAlpha(50),
+                    borderRadius: new BorderRadius.circular(10)),
               );
             } else {
               return Visibility(
@@ -1008,43 +1004,40 @@ class _GraduatesClassTeachersDetailsPage extends State<GraduatesClassTeachersDet
 
           (() {
             if (_qualification.toString().isNotEmpty) {
-              return Padding(
-                padding: const EdgeInsets.only(top: 20.0),
-                child: Container(
-                  child: Material(
-                    color: materialBackgroundColor,
-                    child: InkWell(
-                      splashColor: splashColorThree,
-                      onTap: () {},
-                      child: Padding(
-                        padding: const EdgeInsets.only(bottom: 15, top: 15, left: 25),
-                        child: Text.rich(
-                          TextSpan(
-                            children: <TextSpan>[
-                              TextSpan(
-                                  text: qualificationTitle,
-                                  style: GoogleFonts.aBeeZee(
-                                    color: textColor,
-                                    fontSize: 19,
-                                    fontWeight: FontWeight.bold,
-                                  )),
-                              TextSpan(
-                                  text: ' ' + _qualification,
-                                  style: GoogleFonts.trykker(
-                                    color: textColor,
-                                    fontSize: 19,
-                                    fontWeight: FontWeight.w300,
-                                  )),
-                            ],
-                          ),
+              return Container(
+                child: Material(
+                  color: materialBackgroundColor,
+                  child: InkWell(
+                    splashColor: splashColorThree,
+                    onTap: () {},
+                    child: Padding(
+                      padding: const EdgeInsets.only(bottom: 15, top: 15, left: 25),
+                      child: Text.rich(
+                        TextSpan(
+                          children: <TextSpan>[
+                            TextSpan(
+                                text: qualificationTitle,
+                                style: GoogleFonts.aBeeZee(
+                                  color: textColor,
+                                  fontSize: 19,
+                                  fontWeight: FontWeight.bold,
+                                )),
+                            TextSpan(
+                                text: ' ' + _qualification,
+                                style: GoogleFonts.trykker(
+                                  color: textColor,
+                                  fontSize: 19,
+                                  fontWeight: FontWeight.w300,
+                                )),
+                          ],
                         ),
                       ),
                     ),
                   ),
-                  decoration: BoxDecoration(
-                      color: shapeDecorationColorTwo.withAlpha(50),
-                      borderRadius: new BorderRadius.circular(10)),
                 ),
+                decoration: BoxDecoration(
+                    color: shapeDecorationColorTwo.withAlpha(50),
+                    borderRadius: new BorderRadius.circular(10)),
               );
             } else {
               return Visibility(
@@ -1089,43 +1082,40 @@ class _GraduatesClassTeachersDetailsPage extends State<GraduatesClassTeachersDet
 
           (() {
             if (_yearOfInception.toString().isNotEmpty) {
-              return Padding(
-                padding: const EdgeInsets.only(top: 20.0),
-                child: Container(
-                  child: Material(
-                    color: materialBackgroundColor,
-                    child: InkWell(
-                      splashColor: splashColorThree,
-                      onTap: () {},
-                      child: Padding(
-                        padding: const EdgeInsets.only(bottom: 15, top: 15, left: 25),
-                        child: Text.rich(
-                          TextSpan(
-                            children: <TextSpan>[
-                              TextSpan(
-                                  text: yearOfInceptionTitle,
-                                  style: GoogleFonts.aBeeZee(
-                                    color: textColor,
-                                    fontSize: 19,
-                                    fontWeight: FontWeight.bold,
-                                  )),
-                              TextSpan(
-                                  text: ' ' + _yearOfInception,
-                                  style: GoogleFonts.trykker(
-                                    color: textColor,
-                                    fontSize: 19,
-                                    fontWeight: FontWeight.w300,
-                                  )),
-                            ],
-                          ),
+              return Container(
+                child: Material(
+                  color: materialBackgroundColor,
+                  child: InkWell(
+                    splashColor: splashColorThree,
+                    onTap: () {},
+                    child: Padding(
+                      padding: const EdgeInsets.only(bottom: 15, top: 15, left: 25),
+                      child: Text.rich(
+                        TextSpan(
+                          children: <TextSpan>[
+                            TextSpan(
+                                text: yearOfInceptionTitle,
+                                style: GoogleFonts.aBeeZee(
+                                  color: textColor,
+                                  fontSize: 19,
+                                  fontWeight: FontWeight.bold,
+                                )),
+                            TextSpan(
+                                text: ' ' + _yearOfInception,
+                                style: GoogleFonts.trykker(
+                                  color: textColor,
+                                  fontSize: 19,
+                                  fontWeight: FontWeight.w300,
+                                )),
+                          ],
                         ),
                       ),
                     ),
                   ),
-                  decoration: BoxDecoration(
-                      color: shapeDecorationColorTwo.withAlpha(50),
-                      borderRadius: new BorderRadius.circular(10)),
                 ),
+                decoration: BoxDecoration(
+                    color: shapeDecorationColorTwo.withAlpha(50),
+                    borderRadius: new BorderRadius.circular(10)),
               );
             } else {
               return Visibility(
@@ -1170,43 +1160,40 @@ class _GraduatesClassTeachersDetailsPage extends State<GraduatesClassTeachersDet
 
           (() {
             if (_regionFrom.toString().isNotEmpty) {
-              return Padding(
-                padding: const EdgeInsets.only(top: 20.0),
-                child: Container(
-                  child: Material(
-                    color: materialBackgroundColor,
-                    child: InkWell(
-                      splashColor: splashColorThree,
-                      onTap: () {},
-                      child: Padding(
-                        padding: const EdgeInsets.only(bottom: 15, top: 15, left: 25),
-                        child: Text.rich(
-                          TextSpan(
-                            children: <TextSpan>[
-                              TextSpan(
-                                  text: regionOfOriginTitle,
-                                  style: GoogleFonts.aBeeZee(
-                                    color: textColor,
-                                    fontSize: 19,
-                                    fontWeight: FontWeight.bold,
-                                  )),
-                              TextSpan(
-                                  text: ' ' + _regionFrom,
-                                  style: GoogleFonts.trykker(
-                                    color: textColor,
-                                    fontSize: 19,
-                                    fontWeight: FontWeight.w300,
-                                  )),
-                            ],
-                          ),
+              return Container(
+                child: Material(
+                  color: materialBackgroundColor,
+                  child: InkWell(
+                    splashColor: splashColorThree,
+                    onTap: () {},
+                    child: Padding(
+                      padding: const EdgeInsets.only(bottom: 15, top: 15, left: 25),
+                      child: Text.rich(
+                        TextSpan(
+                          children: <TextSpan>[
+                            TextSpan(
+                                text: regionOfOriginTitle,
+                                style: GoogleFonts.aBeeZee(
+                                  color: textColor,
+                                  fontSize: 19,
+                                  fontWeight: FontWeight.bold,
+                                )),
+                            TextSpan(
+                                text: ' ' + _regionFrom,
+                                style: GoogleFonts.trykker(
+                                  color: textColor,
+                                  fontSize: 19,
+                                  fontWeight: FontWeight.w300,
+                                )),
+                          ],
                         ),
                       ),
                     ),
                   ),
-                  decoration: BoxDecoration(
-                      color: shapeDecorationColorTwo.withAlpha(50),
-                      borderRadius: new BorderRadius.circular(10)),
                 ),
+                decoration: BoxDecoration(
+                    color: shapeDecorationColorTwo.withAlpha(50),
+                    borderRadius: new BorderRadius.circular(10)),
               );
             } else {
               return Visibility(
@@ -1251,43 +1238,40 @@ class _GraduatesClassTeachersDetailsPage extends State<GraduatesClassTeachersDet
 
           (() {
             if (_hobbies.toString().isNotEmpty) {
-              return Padding(
-                padding: const EdgeInsets.only(top: 20.0),
-                child: Container(
-                  child: Material(
-                    color: materialBackgroundColor,
-                    child: InkWell(
-                      splashColor: splashColorThree,
-                      onTap: () {},
-                      child: Padding(
-                        padding: const EdgeInsets.only(bottom: 15, top: 15, left: 25),
-                        child: Text.rich(
-                          TextSpan(
-                            children: <TextSpan>[
-                              TextSpan(
-                                  text: hobbiesTitle,
-                                  style: GoogleFonts.aBeeZee(
-                                    color: textColor,
-                                    fontSize: 19,
-                                    fontWeight: FontWeight.bold,
-                                  )),
-                              TextSpan(
-                                  text: ' ' + _hobbies,
-                                  style: GoogleFonts.trykker(
-                                    color: textColor,
-                                    fontSize: 19,
-                                    fontWeight: FontWeight.w300,
-                                  )),
-                            ],
-                          ),
+              return Container(
+                child: Material(
+                  color: materialBackgroundColor,
+                  child: InkWell(
+                    splashColor: splashColorThree,
+                    onTap: () {},
+                    child: Padding(
+                      padding: const EdgeInsets.only(bottom: 15, top: 15, left: 25),
+                      child: Text.rich(
+                        TextSpan(
+                          children: <TextSpan>[
+                            TextSpan(
+                                text: hobbiesTitle,
+                                style: GoogleFonts.aBeeZee(
+                                  color: textColor,
+                                  fontSize: 19,
+                                  fontWeight: FontWeight.bold,
+                                )),
+                            TextSpan(
+                                text: ' ' + _hobbies,
+                                style: GoogleFonts.trykker(
+                                  color: textColor,
+                                  fontSize: 19,
+                                  fontWeight: FontWeight.w300,
+                                )),
+                          ],
                         ),
                       ),
                     ),
                   ),
-                  decoration: BoxDecoration(
-                      color: shapeDecorationColorTwo.withAlpha(50),
-                      borderRadius: new BorderRadius.circular(10)),
                 ),
+                decoration: BoxDecoration(
+                    color: shapeDecorationColorTwo.withAlpha(50),
+                    borderRadius: new BorderRadius.circular(10)),
               );
             } else {
               return Visibility(
@@ -1332,43 +1316,40 @@ class _GraduatesClassTeachersDetailsPage extends State<GraduatesClassTeachersDet
 
           (() {
             if (_philosophy.toString().isNotEmpty) {
-              return Padding(
-                padding: const EdgeInsets.only(top: 20.0),
-                child: Container(
-                  child: Material(
-                    color: materialBackgroundColor,
-                    child: InkWell(
-                      splashColor: splashColorThree,
-                      onTap: () {},
-                      child: Padding(
-                        padding: const EdgeInsets.only(bottom: 15, top: 15, left: 25),
-                        child: Text.rich(
-                          TextSpan(
-                            children: <TextSpan>[
-                              TextSpan(
-                                  text: philosophyTitle,
-                                  style: GoogleFonts.aBeeZee(
-                                    color: textColor,
-                                    fontSize: 19,
-                                    fontWeight: FontWeight.bold,
-                                  )),
-                              TextSpan(
-                                  text: ' ' + _philosophy,
-                                  style: GoogleFonts.trykker(
-                                    color: textColor,
-                                    fontSize: 19,
-                                    fontWeight: FontWeight.w300,
-                                  )),
-                            ],
-                          ),
+              return Container(
+                child: Material(
+                  color: materialBackgroundColor,
+                  child: InkWell(
+                    splashColor: splashColorThree,
+                    onTap: () {},
+                    child: Padding(
+                      padding: const EdgeInsets.only(bottom: 15, top: 15, left: 25),
+                      child: Text.rich(
+                        TextSpan(
+                          children: <TextSpan>[
+                            TextSpan(
+                                text: philosophyTitle,
+                                style: GoogleFonts.aBeeZee(
+                                  color: textColor,
+                                  fontSize: 19,
+                                  fontWeight: FontWeight.bold,
+                                )),
+                            TextSpan(
+                                text: ' ' + _philosophy,
+                                style: GoogleFonts.trykker(
+                                  color: textColor,
+                                  fontSize: 19,
+                                  fontWeight: FontWeight.w300,
+                                )),
+                          ],
                         ),
                       ),
                     ),
                   ),
-                  decoration: BoxDecoration(
-                      color: shapeDecorationColorTwo.withAlpha(50),
-                      borderRadius: new BorderRadius.circular(10)),
                 ),
+                decoration: BoxDecoration(
+                    color: shapeDecorationColorTwo.withAlpha(50),
+                    borderRadius: new BorderRadius.circular(10)),
               );
             } else {
               return Visibility(

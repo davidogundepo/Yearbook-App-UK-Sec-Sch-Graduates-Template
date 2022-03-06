@@ -19,7 +19,7 @@ import '../bloc_navigation_bloc/navigation_bloc.dart';
 import '../details_pages/year_11a_details_page.dart';
 
 
-String schoolName = "Sidney Stringer Academy";
+String schoolName = "AAB Secondary School";
 String postcode = "CV1 5GE";
 String city = "Coventry";
 String stateName = "West Midlands";
@@ -50,22 +50,21 @@ String appOverviewSharedPreferencesContentTwo = "Our vision is to raise the tota
 String appOverviewSharedPreferencesContentThree = "Welcome to our inventory, do read through and know more!";
 String appOverviewSharedPreferencesButton = "Awesome";
 
-String imgAsset = "assets/images/thrown_11_5.jpg";
+String imgAsset = "assets/images/hallel_5.jpg";
 
-Color backgroundColorr = Color.fromRGBO(222, 93, 131, 1);
-Color backgroundColor = Color.fromRGBO(0, 91, 91, 1.0);
+Color backgroundColor = Color.fromRGBO(222, 93, 131, 1);
 Color appBarTextColor = Colors.white;
-Color appBarBackgroundColor = Colors.teal[400];
+Color appBarBackgroundColor = Colors.pink[300];
 Color appBarIconColor = Colors.white;
 Color modalColor = Colors.transparent;
-Color modalBackgroundColor = Colors.teal[700];
+Color modalBackgroundColor = Colors.pink[300];
 Color materialBackgroundColor = Colors.transparent;
 Color cardBackgroundColor = Colors.white;
-Color splashColor = Colors.teal[200];
+Color splashColor = Colors.pinkAccent;
 Color iconColor = Colors.white;
 Color textColor = Colors.white;
 Color textColorTwo = Colors.white70;
-Color dialogBackgroundColor = Color.fromRGBO(0, 91, 91, 1.0);
+Color dialogBackgroundColor = Color.fromRGBO(222, 93, 131, 1);
 Color borderColor = Colors.black;
 
 
@@ -454,7 +453,6 @@ class _MyYear11ClassAPage extends State<MyYear11ClassAPage> {
                                               color: textColor,
                                             ),),
                                           onTap: () {
-                                            Navigator.of(context).pop(false);
                                             navigateToWhoWeArePage(context);
                                           }
                                       ),
@@ -465,7 +463,6 @@ class _MyYear11ClassAPage extends State<MyYear11ClassAPage> {
                                             color: textColor,
                                           ),),
                                         onTap: () {
-                                          Navigator.of(context).pop(false);
                                           navigateToAboutSchoolDetailsPage(context);
                                         },
                                       ),
@@ -476,7 +473,6 @@ class _MyYear11ClassAPage extends State<MyYear11ClassAPage> {
                                               color: textColor,
                                             ),),
                                           onTap: () {
-                                            Navigator.of(context).pop(false);
                                             navigateToAcronymsMeaningsPage(context);
                                           }
                                       ),
@@ -487,7 +483,6 @@ class _MyYear11ClassAPage extends State<MyYear11ClassAPage> {
                                             color: textColor,
                                           ),),
                                         onTap: () {
-                                          Navigator.of(context).pop(false);
                                           navigateToAboutAppDetailsPage(context);
                                         },
                                       ),
@@ -522,7 +517,7 @@ class _MyYear11ClassAPage extends State<MyYear11ClassAPage> {
                         heightFactor: 0.6,
                         child: Text(thrownName,
                             textAlign: TextAlign.center,
-                            style: GoogleFonts.abel(
+                            style: GoogleFonts.amaticSC(
                               color: textColor,
                               fontSize: 26.0,
                               fontWeight: FontWeight.bold
