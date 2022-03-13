@@ -655,7 +655,7 @@ class _Year11ClassCDetailsPage extends State<Year11ClassCDetailsPage> {
                       ),
                       elevation: 2,
                       color: buttonColor,
-                      icon: new Icon(MdiIcons.twitterCircle, color: iconTextColor),
+                      icon: new Icon(MdiIcons.twitter, color: iconTextColor),
                       label: Text(twitterButton,
                           style: GoogleFonts.abel(
                               color: iconTextColor,
@@ -688,7 +688,7 @@ class _Year11ClassCDetailsPage extends State<Year11ClassCDetailsPage> {
                         ),
                         elevation: 2,
                         color: buttonColor,
-                        icon: new Icon(MdiIcons.twitterCircle, color: iconTextColor),
+                        icon: new Icon(MdiIcons.twitter, color: iconTextColor),
                         label: Text(twitterButton,
                             style: GoogleFonts.abel(
                                 color: iconTextColor,

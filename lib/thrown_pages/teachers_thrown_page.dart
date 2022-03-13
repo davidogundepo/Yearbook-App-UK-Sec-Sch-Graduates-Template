@@ -326,7 +326,7 @@ class _MyGraduatesClassTeachersPage extends State<MyGraduatesClassTeachersPage> 
                       title: Center(
                         heightFactor: 0.6,
                         child: Text(thrownName,
-                            style: GoogleFonts.amaticSC(
+                            style: GoogleFonts.aBeeZee(
                               color: textColor,
                               fontSize: 26.0,
                               fontWeight: FontWeight.bold

@@ -601,7 +601,7 @@ class _ManagementBodyDetailsPage extends State<ManagementBodyDetailsPage>{
                       ),
                       elevation: 2,
                       color: buttonColor,
-                      icon: new Icon(MdiIcons.twitterCircle, color: iconTextColor),
+                      icon: new Icon(MdiIcons.twitter, color: iconTextColor),
                       label: Text(twitterButton,
                           style: GoogleFonts.abel(
                               color: iconTextColor,
@@ -634,7 +634,7 @@ class _ManagementBodyDetailsPage extends State<ManagementBodyDetailsPage>{
                         ),
                         elevation: 2,
                         color: buttonColor,
-                        icon: new Icon(MdiIcons.twitterCircle, color: iconTextColor),
+                        icon: new Icon(MdiIcons.twitter, color: iconTextColor),
                         label: Text(twitterButton,
                             style: GoogleFonts.abel(
                                 color: iconTextColor,
@@ -727,7 +727,7 @@ class _ManagementBodyDetailsPage extends State<ManagementBodyDetailsPage>{
                       ),
                       elevation: 2,
                       color: buttonColor,
-                      icon: new Icon(MdiIcons.linkedinBox, color: iconTextColor),
+                      icon: new Icon(MdiIcons.linkedin, color: iconTextColor),
                       label: Text(linkedInButton,
                           style: GoogleFonts.abel(
                               color: iconTextColor,
@@ -754,7 +754,7 @@ class _ManagementBodyDetailsPage extends State<ManagementBodyDetailsPage>{
                         ),
                         elevation: 2,
                         color: buttonColor,
-                        icon: new Icon(MdiIcons.linkedinBox, color: iconTextColor),
+                        icon: new Icon(MdiIcons.linkedin, color: iconTextColor),
                         label: Text(linkedInButton,
                             style: GoogleFonts.abel(
                                 color: iconTextColor,

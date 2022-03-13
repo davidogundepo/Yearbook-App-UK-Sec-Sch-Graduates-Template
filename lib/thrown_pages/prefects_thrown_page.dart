@@ -333,7 +333,7 @@ class _MyClassPrefectsPage extends State<MyClassPrefectsPage> {
                       title: Center(
                         heightFactor: 0.6,
                         child: Text(thrownName,
-                            style:  GoogleFonts.amaticSC(
+                            style:  GoogleFonts.aBeeZee(
                               color: textColor,
                                 fontSize: 26.0,
                                 fontWeight: FontWeight.bold

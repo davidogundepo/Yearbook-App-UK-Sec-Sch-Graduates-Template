@@ -376,7 +376,7 @@ class _MyYear11ClassCPage extends State<MyYear11ClassCPage> {
                       title: Center(
                         heightFactor: 0.6,
                         child: Text(thrownName,
-                            style: GoogleFonts.amaticSC(
+                            style: GoogleFonts.aBeeZee(
                               color: appBarTextColor,
                               fontSize: 26.0,
                               fontWeight: FontWeight.bold

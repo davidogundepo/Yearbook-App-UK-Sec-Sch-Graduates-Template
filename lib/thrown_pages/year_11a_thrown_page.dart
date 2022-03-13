@@ -50,7 +50,7 @@ String appOverviewSharedPreferencesContentTwo = "Our vision is to raise the tota
 String appOverviewSharedPreferencesContentThree = "Welcome to our inventory, do read through and know more!";
 String appOverviewSharedPreferencesButton = "Awesome";
 
-String imgAsset = "assets/images/hallel_5.jpg";
+String imgAsset = "assets/images/hallel_1.jpg";
 
 Color backgroundColor = Color.fromRGBO(222, 93, 131, 1);
 Color appBarTextColor = Colors.white;
@@ -517,7 +517,7 @@ class _MyYear11ClassAPage extends State<MyYear11ClassAPage> {
                         heightFactor: 0.6,
                         child: Text(thrownName,
                             textAlign: TextAlign.center,
-                            style: GoogleFonts.amaticSC(
+                            style: GoogleFonts.aBeeZee(
                               color: textColor,
                               fontSize: 26.0,
                               fontWeight: FontWeight.bold
