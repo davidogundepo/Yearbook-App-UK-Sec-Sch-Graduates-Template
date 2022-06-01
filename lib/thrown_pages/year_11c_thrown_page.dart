@@ -16,7 +16,7 @@ import '../bloc_navigation_bloc/navigation_bloc.dart';
 import '../details_pages/year_11c_details_page.dart';
 import '../notifier/year_11_class_c_notifier.dart';
 
-String schoolName = "AAB Secondary School";
+String schoolName = "AAB Academy";
 String thrownName = "Year 11C Class Graduates";
 
 String exitAppStatement = "Exit from App";
@@ -33,18 +33,18 @@ String aboutApp = "About App";
 String imgAsset = "assets/images/hallel_13.jpg";
 
 
-Color backgroundColor = Color.fromRGBO(86, 158, 128, 1);
+Color backgroundColor = Color.fromRGBO(107, 122, 161, 1);
 Color appBarTextColor = Colors.white;
-Color appBarBackgroundColor = Color.fromRGBO(46, 137, 112, 1);
+Color appBarBackgroundColor = Color.fromRGBO(107, 122, 161, 1);
 Color appBarIconColor = Colors.white;
 Color modalColor = Colors.transparent;
 Color materialBackgroundColor = Colors.transparent;
 Color cardBackgroundColor = Colors.white;
-Color splashColor = Color.fromRGBO(46, 137, 112, 1);
+Color splashColor = Color.fromRGBO(107, 122, 161, 1);
 Color iconColor = Colors.white;
 Color textColor = Colors.white;
 Color textColorTwo = Colors.white70;
-Color dialogBackgroundColor = Color.fromRGBO(86, 158, 128, 1);
+Color dialogBackgroundColor = Color.fromRGBO(107, 122, 161, 1);
 Color borderColor = Colors.black;
 
 
@@ -313,7 +313,8 @@ class _MyYear11ClassCPage extends State<MyYear11ClassCPage> {
                                             color: textColor
                                           ),),
                                           onTap: () {
-                                          navigateToWhoWeArePage(context);
+                                            Navigator.of(context).pop(false);
+                                            navigateToWhoWeArePage(context);
                                           }
                                       ),
                                       ListTile(
@@ -323,7 +324,8 @@ class _MyYear11ClassCPage extends State<MyYear11ClassCPage> {
                                               color: textColor
                                           ),),
                                         onTap: () {
-                                          navigateToAboutSchoolDetailsPage(context);
+                                            Navigator.of(context).pop(false);
+                                            navigateToAboutSchoolDetailsPage(context);
                                         },
                                       ),
                                       ListTile(
@@ -333,6 +335,7 @@ class _MyYear11ClassCPage extends State<MyYear11ClassCPage> {
                                                 color: textColor
                                             ),),
                                           onTap: () {
+                                            Navigator.of(context).pop(false);
                                             navigateToAcronymsMeaningsPage(context);
                                           }
                                       ),
@@ -343,7 +346,8 @@ class _MyYear11ClassCPage extends State<MyYear11ClassCPage> {
                                               color: textColor
                                           ),),
                                         onTap: () {
-                                          navigateToAboutAppDetailsPage(context);
+                                            Navigator.of(context).pop(false);
+                                            navigateToAboutAppDetailsPage(context);
                                         },
                                       ),
 

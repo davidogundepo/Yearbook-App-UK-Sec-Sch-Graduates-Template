@@ -5,10 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 
-String schoolName = "AAB Secondary School";
+String schoolName = "AAB Academy";
 String title = "About App";
 String imageAboutApp = "assets/images/about_app.jpg";
-String schoolAlmanac = "$schoolName Almanac, 2021";
+String schoolAlmanac = "$schoolName Almanac, 2022";
 String developerWebsite = "https://icdatinnovations.com/";
 
 String googlePlayServicesPolicyWebsite = "https://play.google.com/about/privacy-security-deception/";
@@ -65,7 +65,7 @@ String security1 = "We value your trust in providing us your Personal Informatio
 String childrenPrivacy = "Children’s Privacy";
 String childrenPrivacy1 = "These Services do not address anyone under the age of 8. We do not knowingly collect personally identifiable information from children under 8. \nIn the case we discover that a child under 8 has provided us with personal information, we immediately delete this from our servers. \nIf you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to do necessary actions.";
 String privacyPolicyChanges = "Changes to This Privacy Policy";
-String privacyPolicyChanges1 = "We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. This policy is effective as of 2021-04-30";
+String privacyPolicyChanges1 = "We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. This policy is effective as of 2022-04-30";
 String contactUs = "Contact Us";
 String contactUs1 = "If you have any questions or suggestions about our Terms and Conditions, Disclaimer, Privacy Policy, Software do not hesitate to send an email by clicking me too.";
 String termsEtConditionsMore = "For more information about our terms and conditions, please trust and click me.";

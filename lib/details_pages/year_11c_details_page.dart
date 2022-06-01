@@ -25,13 +25,14 @@ String urlInstagram = "https://www.instagram.com/";
 String urlSnapchat = "https://www.snapchat.com/";
 String urlTikTok = "https://www.tiktok.com/";
 
-String schoolName = "AAB Secondary School";
+String schoolName = "AAB Academy";
 
 String reachDetails = "Contacts";
 String autoBioDetails = "AutoBiography";
 
 String callButton = "Call";
 String messageButton = "Send a Message";
+String whatsAppButton = "Send a WhatsApp Message";
 String emailButton = "Send an Email";
 String twitterButton = "My Twitter";
 String instagramButton = "My Instagram";
@@ -65,20 +66,20 @@ String facebookProfileSharedPreferencesButton = "Go to Facebook";
 String facebookProfileSharedPreferencesButtonTwo = "Lol, No";
 
 
-Color backgroundColor = Color.fromRGBO(86, 158, 128, 1);
+Color backgroundColor = Color.fromRGBO(107, 122, 161, 1);
 Color appBarTextColor = Colors.white;
-Color appBarBackgroundColor = Color.fromRGBO(46, 137, 112, 1);
+Color appBarBackgroundColor = Color.fromRGBO(107, 122, 161, 1);
 Color appBarIconColor = Colors.white;
 Color materialBackgroundColor = Colors.transparent;
-Color shapeDecorationColor = Color.fromRGBO(46, 137, 112, 1);
-Color shapeDecorationTextColor = Color.fromRGBO(46, 137, 112, 1);
+Color shapeDecorationColor = Color.fromRGBO(107, 122, 161, 1);
+Color shapeDecorationTextColor = Color.fromRGBO(107, 122, 161, 1);
 Color cardBackgroundColor = Colors.white;
 Color splashColor = Colors.white;
-Color splashColorTwo = Color.fromRGBO(46, 137, 112, 1);
+Color splashColorTwo = Color.fromRGBO(107, 122, 161, 1);
 Color iconTextColor = Colors.white;
-Color iconTextColorTwo = Color.fromRGBO(46, 137, 112, 1);
-Color buttonColor = Color.fromRGBO(46, 137, 112, 1);
-Color textColor = Color.fromRGBO(46, 137, 112, 1);
+Color iconTextColorTwo = Color.fromRGBO(107, 122, 161, 1);
+Color buttonColor = Color.fromRGBO(107, 122, 161, 1);
+Color textColor = Color.fromRGBO(107, 122, 161, 1);
 Color confettiColorOne = Colors.green;
 Color confettiColorTwo = Colors.blue;
 Color confettiColorThree = Colors.pink;
@@ -383,6 +384,7 @@ class _Year11ClassCDetailsPage extends State<Year11ClassCDetailsPage> {
     _snapchat = year11ClassCNotifier.currentYear11ClassC.snapchat;
     _tikTok = year11ClassCNotifier.currentYear11ClassC.tikTok;
     _favSubject = year11ClassCNotifier.currentYear11ClassC.favSubject;
+    _favSchoolActivity = year11ClassCNotifier.currentYear11ClassC.favSchoolActivity;
     _favClassmate = year11ClassCNotifier.currentYear11ClassC.favClassmate;
     _favPlaceInCampus = year11ClassCNotifier.currentYear11ClassC.favPlaceInCampus;
     _favSportInCampus = year11ClassCNotifier.currentYear11ClassC.favSportInCampus;
@@ -533,10 +535,10 @@ class _Year11ClassCDetailsPage extends State<Year11ClassCDetailsPage> {
                       elevation: 2,
                       color: buttonColor,
                       icon: new Icon(
-                        MdiIcons.message,
+                        MdiIcons.whatsapp,
                         color: iconTextColor,
                       ),
-                      label: Text(messageButton,
+                      label: Text(whatsAppButton,
                           style: GoogleFonts.abel(
                               color: iconTextColor,
                               fontSize: 18,
@@ -781,11 +783,11 @@ class _Year11ClassCDetailsPage extends State<Year11ClassCDetailsPage> {
                       color: buttonColor,
                       icon: new Icon(
                         MdiIcons.snapchat,
-                        color: iconTextColorTwo,
+                        color: iconTextColor,
                       ),
                       label: Text(snapchatButton,
                           style: GoogleFonts.abel(
-                              color: iconTextColorTwo,
+                              color: iconTextColor,
                               fontSize: 18,
                               fontWeight: FontWeight.w300)),
                       onPressed: () {
@@ -814,11 +816,11 @@ class _Year11ClassCDetailsPage extends State<Year11ClassCDetailsPage> {
                         color: buttonColor,
                         icon: new Icon(
                           MdiIcons.snapchat,
-                          color: iconTextColorTwo,
+                          color: iconTextColor,
                         ),
                         label: Text(snapchatButton,
                             style: GoogleFonts.abel(
-                                color: iconTextColorTwo,
+                                color: iconTextColor,
                                 fontSize: 18,
                                 fontWeight: FontWeight.w300)),
                         onPressed: () {
@@ -844,11 +846,11 @@ class _Year11ClassCDetailsPage extends State<Year11ClassCDetailsPage> {
                       color: buttonColor,
                       icon: new FaIcon(
                         FontAwesomeIcons.tiktok,
-                        color: iconTextColorTwo,
+                        color: iconTextColor,
                       ),
                       label: Text(tikTokButton,
                           style: GoogleFonts.abel(
-                              color: iconTextColorTwo,
+                              color: iconTextColor,
                               fontSize: 18,
                               fontWeight: FontWeight.w300)),
                       onPressed: () {

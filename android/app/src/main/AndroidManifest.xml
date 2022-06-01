@@ -21,7 +21,6 @@
         </intent>
     </queries>
 
-
    <application
         android:label="UK Sec Sch"
         android:icon="@mipmap/ic_launcher"
@@ -31,9 +30,9 @@
        android:allowBackup="true">
         <activity
             android:name=".MainActivity"
-            android:launchMode="singleTop"
             android:exported="true"
-            android:theme="@style/LaunchTheme"
+            android:launchMode="singleTop"
+            android:theme="@style/NormalTheme"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:hardwareAccelerated="true"
             android:windowSoftInputMode="adjustResize">

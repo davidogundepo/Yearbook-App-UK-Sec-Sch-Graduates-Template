@@ -17,7 +17,7 @@ import '../details_pages/graduates_class_teachers_details.page.dart';
 import '../notifier/graduates_class_teachers_notifier.dart';
 
 
-String schoolName = "AAB Secondary School";
+String schoolName = "AAB Academy";
 String thrownName = "Class Teachers";
 
 String exitAppStatement = "Exit from App";
@@ -34,20 +34,20 @@ String aboutApp = "About App";
 String imgAsset = "assets/images/management_2.jpg";
 
 
-Color backgroundColor = Color.fromRGBO(114, 78, 147, 1);
+Color backgroundColor = Color.fromRGBO(62, 44, 65, 1);
 Color appBarTextColor = Colors.white;
-Color appBarBackgroundColor = Color.fromRGBO(95, 65, 128, 1);
+Color appBarBackgroundColor = Color.fromRGBO(62, 44, 65, 1);
 Color appBarIconColor = Colors.white;
 Color modalColor = Colors.transparent;
-Color modalBackgroundColor = Color.fromRGBO(95, 65, 128, 1);
+Color modalBackgroundColor = Color.fromRGBO(62, 44, 65, 1);
 Color materialBackgroundColor = Colors.transparent;
 Color cardBackgroundColor = Colors.white;
-Color splashColor = Colors.purple;
-Color splashColorTwo = Colors.black87;
+Color splashColor = Color.fromRGBO(62, 44, 65, 1);
+Color splashColorTwo = Color.fromRGBO(62, 44, 65, 1);
 Color iconColor = Colors.white;
 Color textColor = Colors.white;
 Color textColorTwo = Colors.white70;
-Color dialogBackgroundColor = Color.fromRGBO(114, 78, 147, 1);
+Color dialogBackgroundColor = Color.fromRGBO(62, 44, 65, 1);
 Color borderColor = Colors.black;
 
 
@@ -260,6 +260,7 @@ class _MyGraduatesClassTeachersPage extends State<MyGraduatesClassTeachersPage> 
                                             color: textColor
                                           ),),
                                           onTap: () {
+                                            Navigator.of(context).pop(false);
                                             navigateToWhoWeArePage(context);
                                           }
                                       ),
@@ -271,7 +272,8 @@ class _MyGraduatesClassTeachersPage extends State<MyGraduatesClassTeachersPage> 
                                               color: textColor
                                           ),),
                                         onTap: () {
-                                          navigateToAboutSchoolDetailsPage(context);
+                                            Navigator.of(context).pop(false);
+                                            navigateToAboutSchoolDetailsPage(context);
                                         },
                                       ),
                                       ListTile(
@@ -282,6 +284,7 @@ class _MyGraduatesClassTeachersPage extends State<MyGraduatesClassTeachersPage> 
                                                 color: textColor
                                             ),),
                                           onTap: () {
+                                            Navigator.of(context).pop(false);
                                             navigateToAcronymsMeaningsPage(context);
                                           }
                                       ),
@@ -293,7 +296,8 @@ class _MyGraduatesClassTeachersPage extends State<MyGraduatesClassTeachersPage> 
                                               color: textColor
                                           ),),
                                         onTap: () {
-                                          navigateToAboutAppDetailsPage(context);
+                                            Navigator.of(context).pop(false);
+                                            navigateToAboutAppDetailsPage(context);
                                         },
                                       ),
 

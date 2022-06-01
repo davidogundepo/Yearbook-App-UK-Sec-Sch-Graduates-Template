@@ -9,21 +9,21 @@ import 'package:provider/provider.dart';
 import '../details_pages/year_11a_details_page.dart';
 import '../notifier/year_11_class_a_notifier.dart';
 
-Color backgroundColor = Color.fromRGBO(222, 93, 131, 1);
-Color appBarTextColor = Colors.white;
-Color appBarBackgroundColor = Colors.pink[300];
-Color appBarIconColor = Colors.white;
+Color backgroundColor = Color.fromRGBO(255, 238, 238, 1);
+Color appBarTextColor = Colors.blueGrey;
+Color appBarBackgroundColor = Color.fromRGBO(255, 238, 238, 1);
+Color appBarIconColor = Colors.blueGrey;
 Color modalColor = Colors.transparent;
-Color modalBackgroundColor = Colors.pink[300];
+Color modalBackgroundColor = Color.fromRGBO(255, 238, 238, 1);
 Color materialBackgroundColor = Colors.transparent;
-Color cardBackgroundColor = Colors.white;
-Color splashColor = Colors.pinkAccent;
-Color iconColor = Colors.white;
-Color textColor = Colors.white;
-Color textColorTwo = Colors.white70;
-Color dialogBackgroundColor = Color.fromRGBO(222, 93, 131, 1);
+Color cardBackgroundColor = Colors.blueGrey;
+Color splashColor = Color.fromRGBO(255, 238, 238, 1);
+Color iconColor = Colors.blueGrey;
+Color textColor = Colors.blueGrey;
+Color textColorTwo = Colors.blueGrey;
+Color dialogBackgroundColor = Color.fromRGBO(255, 238, 238, 1);
 Color borderColor = Colors.black;
-Color textHighlightColor = Colors.white;
+Color textHighlightColor = Colors.blueGrey;
 
 var queryTech;
 

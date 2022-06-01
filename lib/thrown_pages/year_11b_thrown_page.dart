@@ -17,7 +17,7 @@ import 'package:provider/provider.dart';
 import '../details_pages/year_11b_details_page.dart';
 
 
-String schoolName = "AAB Secondary School";
+String schoolName = "AAB Academy";
 String thrownName = "Year 11B Class Graduates";
 
 String exitAppStatement = "Exit from App";
@@ -33,23 +33,23 @@ String aboutApp = "About App";
 
 String imgAsset = "assets/images/hallel_12.jpg";
 
-Color backgroundColor = Color.fromRGBO(194, 178, 128, 1);
-Color appBarTextColor = Colors.white;
-Color appBarBackgroundColor = Color.fromRGBO(155, 134, 99, 1);
-Color appBarIconColor = Colors.white;
+Color backgroundColor = Color.fromRGBO(143, 189, 211, 1);
+Color appBarTextColor = Color.fromRGBO(63, 104, 124, 1.0);
+Color appBarBackgroundColor = Color.fromRGBO(143, 189, 211, 1);
+Color appBarIconColor = Color.fromRGBO(63, 104, 124, 1.0);
 Color modalColor = Colors.transparent;
-Color modalBackgroundColor = Color.fromRGBO(194, 178, 128, 1);
+Color modalBackgroundColor = Color.fromRGBO(143, 189, 211, 1);
 Color materialBackgroundColor = Colors.transparent;
-Color cardBackgroundColor = Colors.white;
-Color splashColor = Color.fromRGBO(237, 209, 166, 1);
+Color cardBackgroundColor = Color.fromRGBO(63, 104, 124, 1.0);
+Color splashColor = Color.fromRGBO(143, 189, 211, 1);
 Color splashColorTwo = Colors.black87;
-Color iconColor = Colors.white;
-Color textColor = Colors.white;
-Color textColorTwo = Colors.white70;
-Color dialogBackgroundColor = Color.fromRGBO(194, 178, 128, 1);
+Color iconColor = Color.fromRGBO(63, 104, 124, 1.0);
+Color textColor = Color.fromRGBO(63, 104, 124, 1.0);
+Color textColorTwo = Color.fromRGBO(63, 104, 124, 1.0);
+Color dialogBackgroundColor = Color.fromRGBO(143, 189, 211, 1);
 Color borderColor = Colors.black;
-Color paintColor = Colors.indigo;
-Color paintColorTwo = Colors.indigoAccent;
+Color paintColor = Color.fromRGBO(143, 189, 211, 1);
+Color paintColorTwo = Color.fromRGBO(143, 189, 211, 1);
 
 
 class MyYear11ClassBPage extends StatefulWidget with NavigationStates{
@@ -316,6 +316,7 @@ class _MyYear11ClassBPage extends State<MyYear11ClassBPage> {
                                                 color: textColor
                                             ),),
                                           onTap: () {
+                                            Navigator.of(context).pop(false);
                                             navigateToWhoWeArePage(context);
                                           }
                                       ),
@@ -326,7 +327,8 @@ class _MyYear11ClassBPage extends State<MyYear11ClassBPage> {
                                           color: textColor
                                         ),),
                                         onTap: () {
-                                          navigateToAboutSchoolDetailsPage(context);
+                                            Navigator.of(context).pop(false);
+                                            navigateToAboutSchoolDetailsPage(context);
                                         },
                                       ),
                                       ListTile(
@@ -336,6 +338,7 @@ class _MyYear11ClassBPage extends State<MyYear11ClassBPage> {
                                                 color: textColor
                                             ),),
                                           onTap: () {
+                                            Navigator.of(context).pop(false);
                                             navigateToAcronymsMeaningsPage(context);
                                           }
                                       ),
@@ -346,7 +349,8 @@ class _MyYear11ClassBPage extends State<MyYear11ClassBPage> {
                                               color: textColor,
                                           ),),
                                         onTap: () {
-                                          navigateToAboutAppDetailsPage(context);
+                                            Navigator.of(context).pop(false);
+                                            navigateToAboutAppDetailsPage(context);
                                         },
                                       ),
 

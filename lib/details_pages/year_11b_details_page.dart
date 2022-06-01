@@ -11,7 +11,7 @@ import '../notifier/year_11_class_b_notifier.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
-String schoolName = "AAB Secondary School";
+String schoolName = "AAB Academy";
 
 
 String callFIRST = "tel:+44";
@@ -67,23 +67,23 @@ String facebookProfileSharedPreferencesButton = "Go to Facebook";
 String facebookProfileSharedPreferencesButtonTwo = "Lol, No";
 
 
-Color backgroundColor = Color.fromRGBO(194, 178, 128, 1);
-Color appBarTextColor = Colors.white;
-Color appBarBackgroundColor = Color.fromRGBO(155, 134, 99, 1);
-Color appBarIconColor = Colors.white;
+Color backgroundColor = Color.fromRGBO(143, 189, 211, 1);
+Color appBarTextColor = Color.fromRGBO(63, 104, 124, 1.0);
+  Color appBarBackgroundColor = Color.fromRGBO(143, 189, 211, 1);
+Color appBarIconColor = Color.fromRGBO(63, 104, 124, 1.0);
 Color materialBackgroundColor = Colors.transparent;
-Color shapeDecorationColor = Color.fromRGBO(194, 178, 128, 1);
-Color shapeDecorationColorTwo = Color.fromRGBO(155, 134, 99, 1);
-Color shapeDecorationTextColor = Color.fromRGBO(155, 134, 99, 1);
-Color shapeDecorationIconColor = Color.fromRGBO(155, 134, 99, 1);
-Color cardBackgroundColor = Colors.white;
-Color splashColor = Color.fromRGBO(237, 209, 166, 1);
-Color splashColorTwo = Colors.white;
-Color splashColorThree = Color.fromRGBO(155, 134, 99, 1);
-Color iconTextColor = Colors.white;
-Color iconTextColorTwo = Color.fromRGBO(155, 134, 99, 1);
-Color buttonColor = Color.fromRGBO(155, 134, 99, 1);
-Color textColor = Color.fromRGBO(155, 134, 99, 1);
+Color shapeDecorationColor = Color.fromRGBO(143, 189, 211, 1);
+Color shapeDecorationColorTwo = Color.fromRGBO(143, 189, 211, 1);
+Color shapeDecorationTextColor = Colors.white;
+Color shapeDecorationIconColor = Colors.white;
+Color cardBackgroundColor = Color.fromRGBO(63, 104, 124, 1.0);
+Color splashColor = Color.fromRGBO(143, 189, 211, 1);
+Color splashColorTwo = Color.fromRGBO(63, 104, 124, 1.0);
+Color splashColorThree = Color.fromRGBO(143, 189, 211, 1);
+Color iconTextColor = Color.fromRGBO(63, 104, 124, 1.0);
+Color iconTextColorTwo = Color.fromRGBO(143, 189, 211, 1);
+Color buttonColor = Color.fromRGBO(143, 189, 211, 1);
+Color textColor = Color.fromRGBO(143, 189, 211, 1);
 Color confettiColorOne = Colors.green;
 Color confettiColorTwo = Colors.blue;
 Color confettiColorThree = Colors.pink;
@@ -238,6 +238,7 @@ class _Year11ClassBDetailsPage extends State<Year11ClassBDetailsPage> {
                   splashColor: splashColor,
                   onTap: () {},
                   child: Card(
+                    color: shapeDecorationColor.withOpacity(0.70),
                     elevation: 4,
                     shape: OutlineInputBorder(
                       borderSide: BorderSide(
@@ -785,11 +786,11 @@ class _Year11ClassBDetailsPage extends State<Year11ClassBDetailsPage> {
                       color: buttonColor,
                       icon: new Icon(
                         MdiIcons.snapchat,
-                        color: iconTextColorTwo,
+                        color: iconTextColor,
                       ),
                       label: Text(snapchatButton,
                           style: GoogleFonts.abel(
-                              color: iconTextColorTwo,
+                              color: iconTextColor,
                               fontSize: 18,
                               fontWeight: FontWeight.w300)),
                       onPressed: () {
@@ -818,11 +819,11 @@ class _Year11ClassBDetailsPage extends State<Year11ClassBDetailsPage> {
                         color: buttonColor,
                         icon: new Icon(
                           MdiIcons.snapchat,
-                          color: iconTextColorTwo,
+                          color: iconTextColor,
                         ),
                         label: Text(snapchatButton,
                             style: GoogleFonts.abel(
-                                color: iconTextColorTwo,
+                                color: iconTextColor,
                                 fontSize: 18,
                                 fontWeight: FontWeight.w300)),
                         onPressed: () {
@@ -848,11 +849,11 @@ class _Year11ClassBDetailsPage extends State<Year11ClassBDetailsPage> {
                       color: buttonColor,
                       icon: new FaIcon(
                         FontAwesomeIcons.tiktok,
-                        color: iconTextColorTwo,
+                        color: iconTextColor,
                       ),
                       label: Text(tikTokButton,
                           style: GoogleFonts.abel(
-                              color: iconTextColorTwo,
+                              color: iconTextColor,
                               fontSize: 18,
                               fontWeight: FontWeight.w300)),
                       onPressed: () {

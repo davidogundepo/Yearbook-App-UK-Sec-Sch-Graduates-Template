@@ -16,8 +16,8 @@ import '../bloc_navigation_bloc/navigation_bloc.dart';
 import '../sidebar/menu_item.dart';
 
 
-String schoolName = "AAB Secondary School";
-String subtitle = "Graduating Class (Elite Set 2021)";
+String schoolName = "AAB Academy";
+String subtitle = "Graduating Class (Elite Set 2022)";
 
 String yearClass11ATitle = "Year 11A Class Graduates";
 String yearClass11BTitle = "Year 11B Class Graduates";
@@ -32,27 +32,27 @@ String exitAppSubtitle = "Do you really really want to?";
 String exitAppNo = "Oh No";
 String exitAppYes = "I Have To";
 
-String imgAsset = "assets/images/hallel_9.jpg";
+String imgAsset = "assets/images/uk_sec_sch.jpg";
 
-Color gradientColor = Colors.indigo;
-Color gradientColorTwo = Colors.cyan;
-Color linearGradientColor = Colors.blue;
-Color linearGradientColorTwo = Colors.lightBlueAccent;
-Color boxShadowColor = Colors.blueAccent;
+Color gradientColor = Color.fromRGBO(99, 180, 184, 1);
+Color gradientColorTwo = Color.fromRGBO(164, 217, 219, 1.0);
+Color linearGradientColor = Color.fromRGBO(99, 180, 184, 1);
+Color linearGradientColorTwo =Color.fromRGBO(99, 180, 184, 1);
+Color boxShadowColor = Color.fromRGBO(99, 180, 184, 1);
 Color dividerColor = Colors.white;
 Color materialBackgroundColor = Colors.transparent;
-Color shimmerBaseColor = Colors.white;
-Color shimmerHighlightColor = Colors.brown;
-Color shapeDecorationTextColor = Color.fromRGBO(46, 137, 112, 1);
-Color containerBackgroundColor = Colors.indigo;
-Color containerIconColor = Color(0xFF1BB5FD);
-Color dialogBackgroundColor = Colors.blue;
+Color shimmerBaseColor = Color.fromRGBO(47, 106, 109, 1.0);
+Color shimmerHighlightColor = Color.fromRGBO(99, 180, 184, 1);
+Color shapeDecorationTextColor = Color.fromRGBO(99, 180, 184, 1);
+Color containerBackgroundColor = Color.fromRGBO(99, 180, 184, 1);
+Color containerIconColor = Color.fromRGBO(47, 106, 109, 1.0);
+Color dialogBackgroundColor = Color.fromRGBO(99, 180, 184, 1);
 Color dialogTextColor = Colors.white;
-Color splashColor = Colors.brown;
-Color splashColorTwo = Color.fromRGBO(46, 137, 112, 1);
+Color splashColor = Color.fromRGBO(99, 180, 184, 1);
+Color splashColorTwo = Color.fromRGBO(99, 180, 184, 1);
 Color splashColorThree = Colors.white;
 Color textColor = Colors.white;
-Color textColorTwo = Colors.brown[200];
+Color textColorTwo = Colors.white;
 Color textShadowColor = Colors.white;
 
 class SideBar extends StatefulWidget {
@@ -192,7 +192,7 @@ class _SideBarState extends State<SideBar> with SingleTickerProviderStateMixin<S
                           gradient: LinearGradient(
                               begin: Alignment.topRight,
                               end: Alignment.bottomLeft,
-                              colors: [gradientColor, gradientColorTwo]
+                              colors: [gradientColor, gradientColor]
                           )
                       ),
                       child: SingleChildScrollView(

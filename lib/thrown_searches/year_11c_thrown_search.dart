@@ -9,18 +9,18 @@ import 'package:provider/provider.dart';
 import '../details_pages/year_11c_details_page.dart';
 import '../notifier/year_11_class_c_notifier.dart';
 
-Color backgroundColor = Color.fromRGBO(86, 158, 128, 1);
+Color backgroundColor = Color.fromRGBO(107, 122, 161, 1);
 Color appBarTextColor = Colors.white;
-Color appBarBackgroundColor = Color.fromRGBO(46, 137, 112, 1);
+Color appBarBackgroundColor = Color.fromRGBO(107, 122, 161, 1);
 Color appBarIconColor = Colors.white;
 Color modalColor = Colors.transparent;
 Color materialBackgroundColor = Colors.transparent;
 Color cardBackgroundColor = Colors.white;
-Color splashColor = Color.fromRGBO(46, 137, 112, 1);
+Color splashColor = Color.fromRGBO(107, 122, 161, 1);
 Color iconColor = Colors.white;
 Color textColor = Colors.white;
 Color textColorTwo = Colors.white70;
-Color dialogBackgroundColor = Color.fromRGBO(86, 158, 128, 1);
+Color dialogBackgroundColor = Color.fromRGBO(107, 122, 161, 1);
 Color borderColor = Colors.black;
 Color textHighlightColor = Colors.white;
 

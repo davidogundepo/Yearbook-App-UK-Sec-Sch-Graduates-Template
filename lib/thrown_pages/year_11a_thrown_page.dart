@@ -19,7 +19,7 @@ import '../bloc_navigation_bloc/navigation_bloc.dart';
 import '../details_pages/year_11a_details_page.dart';
 
 
-String schoolName = "AAB Secondary School";
+String schoolName = "AAB Academy";
 String postcode = "CV1 5GE";
 String city = "Coventry";
 String stateName = "West Midlands";
@@ -45,26 +45,26 @@ String networkSharedPreferencesButton = "Okies";
 
 String appOverviewSharedPreferencesKey = "overview_time";
 String appOverviewSharedPreferencesTitle = "APP OVERVIEW";
-String appOverviewSharedPreferencesContentOne = "This Yearbook App was developed for $schoolName, a Secondary School in $postcode, $city, $stateName. $countryName.\n";
+String appOverviewSharedPreferencesContentOne = "This Yearbook App was developed for $schoolName, an Academy in $postcode, $city, $stateName. $countryName.\n";
 String appOverviewSharedPreferencesContentTwo = "Our vision is to raise the total youth through comprehensive education.\n";
 String appOverviewSharedPreferencesContentThree = "Welcome to our inventory, do read through and know more!";
 String appOverviewSharedPreferencesButton = "Awesome";
 
 String imgAsset = "assets/images/hallel_1.jpg";
 
-Color backgroundColor = Color.fromRGBO(222, 93, 131, 1);
-Color appBarTextColor = Colors.white;
-Color appBarBackgroundColor = Colors.pink[300];
-Color appBarIconColor = Colors.white;
+Color backgroundColor = Color.fromRGBO(255, 238, 238, 1.0);
+Color appBarTextColor = Colors.blueGrey;
+Color appBarBackgroundColor = Color.fromRGBO(255, 238, 238, 1);
+Color appBarIconColor = Colors.blueGrey;
 Color modalColor = Colors.transparent;
-Color modalBackgroundColor = Colors.pink[300];
+Color modalBackgroundColor = Color.fromRGBO(255, 238, 238, 1);
 Color materialBackgroundColor = Colors.transparent;
 Color cardBackgroundColor = Colors.white;
-Color splashColor = Colors.pinkAccent;
-Color iconColor = Colors.white;
-Color textColor = Colors.white;
-Color textColorTwo = Colors.white70;
-Color dialogBackgroundColor = Color.fromRGBO(222, 93, 131, 1);
+Color splashColor = Color.fromRGBO(255, 238, 238, 1);
+Color iconColor = Colors.blueGrey;
+Color textColor = Colors.blueGrey;
+Color textColorTwo = Colors.blueGrey;
+Color dialogBackgroundColor = Color.fromRGBO(255, 238, 238, 1);
 Color borderColor = Colors.black;
 
 
@@ -453,7 +453,9 @@ class _MyYear11ClassAPage extends State<MyYear11ClassAPage> {
                                               color: textColor,
                                             ),),
                                           onTap: () {
+                                            Navigator.of(context).pop(false);
                                             navigateToWhoWeArePage(context);
+
                                           }
                                       ),
                                       ListTile(
@@ -463,7 +465,8 @@ class _MyYear11ClassAPage extends State<MyYear11ClassAPage> {
                                             color: textColor,
                                           ),),
                                         onTap: () {
-                                          navigateToAboutSchoolDetailsPage(context);
+                                            Navigator.of(context).pop(false);
+                                            navigateToAboutSchoolDetailsPage(context);
                                         },
                                       ),
                                       ListTile(
@@ -473,6 +476,7 @@ class _MyYear11ClassAPage extends State<MyYear11ClassAPage> {
                                               color: textColor,
                                             ),),
                                           onTap: () {
+                                            Navigator.of(context).pop(false);
                                             navigateToAcronymsMeaningsPage(context);
                                           }
                                       ),
@@ -483,7 +487,8 @@ class _MyYear11ClassAPage extends State<MyYear11ClassAPage> {
                                             color: textColor,
                                           ),),
                                         onTap: () {
-                                          navigateToAboutAppDetailsPage(context);
+                                            Navigator.of(context).pop(false);
+                                            navigateToAboutAppDetailsPage(context);
                                         },
                                       ),
 

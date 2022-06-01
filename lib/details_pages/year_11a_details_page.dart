@@ -11,7 +11,7 @@ import '../notifier/year_11_class_a_notifier.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
-String schoolName = "AAB Secondary School";
+String schoolName = "AAB Academy";
 
 String callFIRST = "tel:+44";
 String smsFIRST = "sms:+44";
@@ -66,24 +66,24 @@ String facebookProfileSharedPreferencesButton = "Go to Facebook";
 String facebookProfileSharedPreferencesButtonTwo = "Lol, No";
 
 
-Color backgroundColor = Color.fromRGBO(222, 93, 131, 1);
-Color appBarTextColor = Colors.white;
-Color appBarBackgroundColor = Colors.pink[300];
-Color appBarIconColor = Colors.white;
+Color backgroundColor = Color.fromRGBO(255, 238, 238, 1);
+Color appBarTextColor = Colors.blueGrey;
+Color appBarBackgroundColor =Color.fromRGBO(255, 238, 238, 1);
+Color appBarIconColor = Colors.blueGrey;
 Color materialBackgroundColor = Colors.transparent;
-Color shapeDecorationColor = Colors.pink[500];
-Color shapeDecorationColorTwo = Colors.white;
-Color shapeDecorationColorThree = Colors.pink[300];
-Color shapeDecorationTextColor = Colors.pink[300];
-Color shapeDecorationIconColor = Colors.pink[300];
-Color cardBackgroundColor = Colors.white;
-Color splashColor = Colors.pink[500];
-Color splashColorTwo = Colors.white;
-Color splashColorThree = Colors.pink[300];
-Color iconTextColor = Colors.white;
-Color iconTextColorTwo = Colors.pink[300];
-Color buttonColor = Colors.pink[300];
-Color textColor = Colors.pink[300];
+Color shapeDecorationColor = Color.fromRGBO(255, 238, 238, 1);
+Color shapeDecorationColorTwo = Colors.blueGrey;
+Color shapeDecorationColorThree =Color.fromRGBO(255, 238, 238, 1);
+Color shapeDecorationTextColor =Colors.blueGrey;
+Color shapeDecorationIconColor =Colors.blueGrey;
+Color cardBackgroundColor = Colors.blueGrey;
+Color splashColor = Color.fromRGBO(255, 238, 238, 1);
+Color splashColorTwo = Colors.blueGrey;
+Color splashColorThree =Color.fromRGBO(255, 238, 238, 1);
+Color iconTextColor = Colors.blueGrey;
+Color iconTextColorTwo =Color.fromRGBO(255, 238, 238, 1);
+Color buttonColor =Color.fromRGBO(255, 238, 238, 1);
+Color textColor =Color.fromRGBO(255, 238, 238, 1);
 Color confettiColorOne = Colors.green;
 Color confettiColorTwo = Colors.blue;
 Color confettiColorThree = Colors.pink;
@@ -778,11 +778,11 @@ class _SubPageState extends State<SubPage> {
                       color: buttonColor,
                       icon: new Icon(
                         MdiIcons.snapchat,
-                        color: iconTextColorTwo,
+                        color: iconTextColor,
                       ),
                       label: Text(snapchatButton,
                           style: GoogleFonts.abel(
-                              color: iconTextColorTwo,
+                              color: iconTextColor,
                               fontSize: 18,
                               fontWeight: FontWeight.w300)),
                       onPressed: () {
@@ -811,11 +811,11 @@ class _SubPageState extends State<SubPage> {
                         color: buttonColor,
                         icon: new Icon(
                           MdiIcons.snapchat,
-                          color: iconTextColorTwo,
+                          color: iconTextColor,
                         ),
                         label: Text(snapchatButton,
                             style: GoogleFonts.abel(
-                                color: iconTextColorTwo,
+                                color: iconTextColor,
                                 fontSize: 18,
                                 fontWeight: FontWeight.w300)),
                         onPressed: () {
@@ -841,11 +841,11 @@ class _SubPageState extends State<SubPage> {
                       color: buttonColor,
                       icon: new FaIcon(
                         FontAwesomeIcons.tiktok,
-                        color: iconTextColorTwo,
+                        color: iconTextColor,
                       ),
                       label: Text(tikTokButton,
                           style: GoogleFonts.abel(
-                              color: iconTextColorTwo,
+                              color: iconTextColor,
                               fontSize: 18,
                               fontWeight: FontWeight.w300)),
                       onPressed: () {

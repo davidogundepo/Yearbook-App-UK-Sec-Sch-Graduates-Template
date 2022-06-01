@@ -13,7 +13,7 @@ import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:pie_chart/pie_chart.dart';
 
 
-String schoolName = "AAB Secondary School";
+String schoolName = "AAB Academy";
 String aboutSchool = "About $schoolName";
 
 String visionSwipe = "Swipe left on 'OUR VISION STATEMENT'  >>>";
@@ -82,22 +82,22 @@ double teachingStaffPopulation = 85;
 double nonTeachingStaffPopulation = 32;
 
 
-Color backgroundColor = Colors.blueGrey[900];
-Color cardBackgroundColor = Colors.black38;
-Color appBarIconColor = Colors.blueGrey;
-Color appBarTextColor = Colors.blueGrey;
-Color appBarBackgroundColor = Colors.blueGrey[800];
-Color cardTextColor = Colors.blueGrey;
-Color boxDecorationColor = Colors.blueGrey;
-Color chartBackgroundColor = Colors.grey[200];
+Color backgroundColor = Color.fromRGBO(142, 128, 106, 1.0);
+Color cardBackgroundColor = Color.fromRGBO(105, 91, 68, 1.0);
+Color appBarIconColor = Color.fromRGBO(210, 193, 166, 1.0);
+Color appBarTextColor = Color.fromRGBO(210, 193, 166, 1.0);
+Color appBarBackgroundColor = Color.fromRGBO(142, 128, 106, 1.0);
+Color cardTextColor = Color.fromRGBO(210, 193, 166, 1.0);
+Color boxDecorationColor = Color.fromRGBO(210, 193, 166, 1.0);
+Color chartBackgroundColor = Color.fromRGBO(210, 193, 166, 1.0);
 Color materialColor = Colors.transparent;
-Color textColor = Colors.blueGrey[900];
-Color firstSchoolChartColor = Colors.blueGrey;
-Color secondSchoolChartColor = Colors.deepOrangeAccent;
-Color thirdSchoolChartColor = Colors.yellow;
-Color fourthSchoolChartColor = Colors.cyan;
-Color firstStudentChartColor = Colors.blueGrey;
-Color secondStudentChartColor = Colors.deepOrangeAccent;
+Color textColor = Color.fromRGBO(142, 128, 106, 1.0);
+Color firstSchoolChartColor = Color.fromRGBO(105, 91, 68, 1.0);
+Color secondSchoolChartColor = Color.fromRGBO(105, 81, 68, 1.0);
+Color thirdSchoolChartColor = Color.fromRGBO(105, 71, 68, 1.0);
+Color fourthSchoolChartColor = Color.fromRGBO(98, 105, 68, 1.0);
+Color firstStudentChartColor = Color.fromRGBO(105, 91, 68, 1.0);
+Color secondStudentChartColor = Color.fromRGBO(142, 128, 106, 1.0);
 
 
 
@@ -456,7 +456,7 @@ class _AboutSchoolDetailsState extends State<AboutSchoolDetails> {
             Padding(
               padding: const EdgeInsets.only(left: 20, right: 20, bottom: 30),
               child: Container(
-                height: 250,
+                height: 400,
                 decoration: BoxDecoration(
                     color: boxDecorationColor.withAlpha(50),
                     borderRadius: new BorderRadius.circular(10)
@@ -491,7 +491,7 @@ class _AboutSchoolDetailsState extends State<AboutSchoolDetails> {
                             chartType: ChartType.disc,
                             legendOptions: LegendOptions(
                               showLegendsInRow: false,
-                              legendPosition: LegendPosition.right,
+                              legendPosition: LegendPosition.bottom,
                               showLegends: true,
                               legendShape: BoxShape.circle,
                               legendTextStyle: TextStyle(
@@ -566,7 +566,7 @@ class _AboutSchoolDetailsState extends State<AboutSchoolDetails> {
             Padding(
               padding: const EdgeInsets.only(left: 20, right: 20, bottom: 30),
               child: Container(
-                height: 270,
+                height: 370,
                 decoration: BoxDecoration(
                     color: boxDecorationColor.withAlpha(50),
                     borderRadius: new BorderRadius.circular(10)
@@ -602,7 +602,7 @@ class _AboutSchoolDetailsState extends State<AboutSchoolDetails> {
                             chartType: ChartType.ring,
                             legendOptions: LegendOptions(
                               showLegendsInRow: false,
-                              legendPosition: LegendPosition.right,
+                              legendPosition: LegendPosition.bottom,
                               showLegends: true,
                               legendShape: BoxShape.circle,
                               legendTextStyle: TextStyle(
@@ -986,6 +986,7 @@ class _AboutSchoolDetailsState extends State<AboutSchoolDetails> {
             Container(
               height: 340,
               child: Swiper(
+                autoplay: true,
                 viewportFraction: 0.8,
                 scale: 0.9,
                 itemCount: schoolArialNotifier.schoolArialList.length,
@@ -1072,6 +1073,7 @@ class _AboutSchoolDetailsState extends State<AboutSchoolDetails> {
             Container(
               height: 340,
               child: Swiper(
+                autoplay: true,
                 viewportFraction: 0.8,
                 scale: 0.9,
                 itemCount: achievementsNotifier.achievementsList.length,

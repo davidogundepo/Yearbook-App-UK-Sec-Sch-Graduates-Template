@@ -18,7 +18,7 @@ import '../notifier/class_prefects_notifier.dart';
 
 
 
-String schoolName = "AAB Secondary School";
+String schoolName = "AAB Academy";
 String thrownName = "School Prefects";
 
 String exitAppStatement = "Exit from App";
@@ -34,21 +34,21 @@ String aboutApp = "About App";
 
 String imgAsset = "assets/images/hallel_18.jpg";
 
-Color backgroundColor = Color.fromRGBO(242, 243, 244, 1);
+Color backgroundColor = Color.fromRGBO(34, 87, 126, 1);
 Color appBarTextColor = Colors.white;
-Color appBarBackgroundColor = Color.fromRGBO(254, 250, 239, 1);
+Color appBarBackgroundColor = Color.fromRGBO(34, 87, 126, 1);
 Color appBarIconColor = Colors.white;
 Color modalColor = Colors.transparent;
-Color modalBackgroundColor = Color.fromRGBO(254, 250, 239, 1);
+Color modalBackgroundColor = Color.fromRGBO(34, 87, 126, 1);
 Color materialBackgroundColor = Colors.transparent;
 Color cardBackgroundColor = Colors.white;
 Color splashColor = Colors.white;
 Color splashColorTwo = Colors.black87;
-Color iconColor = Color.fromRGBO(254, 250, 239, 1);
-Color iconColorTwo = Colors.blueGrey;
-Color textColor = Colors.blueGrey;
+Color iconColor = Colors.white;
+Color iconColorTwo = Colors.white;
+Color textColor = Colors.white;
 Color textColorTwo = Colors.white70;
-Color dialogBackgroundColor = Color.fromRGBO(242, 243, 244, 1);
+Color dialogBackgroundColor = Color.fromRGBO(34, 87, 126, 1);
 Color borderColor = Colors.black;
 
 
@@ -261,6 +261,7 @@ class _MyClassPrefectsPage extends State<MyClassPrefectsPage> {
                                           ),
                                           ),
                                           onTap: () {
+                                            Navigator.of(context).pop(false);
                                             navigateToWhoWeArePage(context);
                                           }
                                       ),
@@ -274,7 +275,8 @@ class _MyClassPrefectsPage extends State<MyClassPrefectsPage> {
                                           ),
                                         ),
                                         onTap: () {
-                                          navigateToAboutSchoolDetailsPage(context);
+                                            Navigator.of(context).pop(false);
+                                            navigateToAboutSchoolDetailsPage(context);
                                         },
                                       ),
                                       ListTile(
@@ -287,6 +289,7 @@ class _MyClassPrefectsPage extends State<MyClassPrefectsPage> {
                                             ),
                                           ),
                                           onTap: () {
+                                            Navigator.of(context).pop(false);
                                             navigateToAcronymsMeaningsPage(context);
                                           }
                                       ),
@@ -300,7 +303,8 @@ class _MyClassPrefectsPage extends State<MyClassPrefectsPage> {
                                           ),
                                         ),
                                         onTap: () {
-                                          navigateToAboutAppDetailsPage(context);
+                                            Navigator.of(context).pop(false);
+                                            navigateToAboutAppDetailsPage(context);
                                         },
                                       ),
 
