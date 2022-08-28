@@ -80,7 +80,7 @@ class MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    FirebaseAnalytics analytics = FirebaseAnalytics();
+    FirebaseAnalytics analytics = FirebaseAnalytics.instance;
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',

@@ -2566,10 +2566,10 @@ class _Year11ClassBDetailsPage extends State<Year11ClassBDetailsPage> {
             onPressed: () {
               launchURL(urlFacebook);
               Toast.show("Loading up Facebook.com",
-                  context, duration:
-                  Toast.LENGTH_LONG,
-                  gravity:  Toast.BOTTOM,
-                  textColor: cardBackgroundColor,
+                  duration:
+                  Toast.lengthLong,
+                  gravity:  Toast.bottom,
+                  webTexColor: cardBackgroundColor,
                   backgroundColor: backgroundColor,
                   backgroundRadius: 10
               );
