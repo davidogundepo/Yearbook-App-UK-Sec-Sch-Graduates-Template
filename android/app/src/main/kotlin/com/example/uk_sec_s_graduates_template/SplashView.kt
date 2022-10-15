@@ -1,4 +1,4 @@
-package com.example.uk_sec_s_graduates_template
+package com.icdatinnovations.uk_sec_s_graduates_template
 
 import android.content.Context
 import android.graphics.Color
